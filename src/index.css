@@ -116,7 +116,9 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
 
+@layer components {
   /* Cyber animations */
   @keyframes matrix-rain {
     0% { transform: translateY(-100vh); opacity: 1; }
@@ -165,5 +167,4 @@ All colors MUST be HSL.
   .fade-in-up {
     animation: fade-in-up 0.8s ease-out;
   }
-}
 }
