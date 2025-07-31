@@ -6,19 +6,35 @@ import { Shield, Award, Trophy, BookOpen, ExternalLink, Target } from "lucide-re
 const CybersecuritySection = () => {
   const certifications = [
     {
-      name: "CompTIA Security+",
-      issuer: "CompTIA",
-      date: "2024",
+      name: "BBCS-IEH Cybersecuritybootcamp",
+      issuer: "BBCS-IEH",
+      date: "2025",
       status: "Certified",
       icon: Shield,
       color: "text-cyber-primary"
     },
     {
-      name: "Certified Ethical Hacker (CEH)",
-      issuer: "EC-Council",
+      name: " Ethical Hacker (EH)",
+      issuer: "Cisco",
       date: "In Progress",
-      status: "Expected 2024",
+      status: "Expected 2025",
       icon: Target,
+      color: "text-cyber-secondary"
+    },
+    {
+      name: "javascript Intermideate",
+      issuer: "sololearn",
+      date: "2025",
+      status: "Certified",
+      icon: BookOpen,
+      color : "text-cyber-primary"
+    },
+    {
+      name: "Python for Everybody",
+      issuer: "Coursera",
+      date: "2024",
+      status: "Certified",
+      icon: Award,
       color: "text-cyber-secondary"
     }
   ];
@@ -26,40 +42,29 @@ const CybersecuritySection = () => {
   const achievements = [
     {
       platform: "TryHackMe",
-      rank: "Top 5%",
-      points: "15,000+",
-      streak: "120 days",
-      badges: 25,
-      link: "https://tryhackme.com/p/alexchen"
+      rank: "Sekeer",
+      points: "1,000+",
+      badges: 2,
+      link: "https://tryhackme.com/p/Fuad001"
     },
-    {
-      platform: "Hack The Box",
-      rank: "Hacker",
-      points: "8,500+",
-      machines: "45",
-      badges: 12,
-      link: "https://hackthebox.eu/profile/alexchen"
-    }
+    
   ];
 
   const ctfResults = [
     {
       name: "CyberDefenders CTF 2024",
-      position: "12th Place",
       team: "ByteBreakers",
       category: "Digital Forensics",
       points: "3,250"
     },
     {
       name: "PicoCTF 2024",
-      position: "Top 100",
       team: "Solo",
       category: "General",
       points: "8,900"
     },
     {
       name: "NahamCon CTF 2024",
-      position: "25th Place",
       team: "CyberGuards",
       category: "Web Exploitation",
       points: "4,100"
@@ -71,10 +76,9 @@ const CybersecuritySection = () => {
     { name: "Metasploit", category: "Penetration Testing" },
     { name: "Burp Suite", category: "Web Security" },
     { name: "Nmap", category: "Network Scanning" },
-    { name: "OWASP ZAP", category: "Web Security" },
-    { name: "Volatility", category: "Memory Forensics" },
-    { name: "Autopsy", category: "Digital Forensics" },
-    { name: "Splunk", category: "SIEM" }
+    {name : "VsCode", category: "Code Editor"},
+    {name : "Kali Linux", category: "Operating System"},
+
   ];
 
   return (
@@ -87,7 +91,7 @@ const CybersecuritySection = () => {
           <div className="w-24 h-1 bg-gradient-cyber mx-auto mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto">
             My journey in cybersecurity through certifications, practical experience, and continuous learning. 
-            Passionate about ethical hacking, digital forensics, and building robust security solutions.
+            Passionate about ethical hacking, building robust Web Applications.
           </p>
         </div>
 
@@ -142,14 +146,14 @@ const CybersecuritySection = () => {
                       <span className="text-muted-foreground">Points:</span>
                       <div className="font-semibold text-cyber-secondary">{achievement.points}</div>
                     </div>
-                    <div>
+                    {/* <div>
                       <span className="text-muted-foreground">
                         {achievement.streak ? "Streak:" : "Machines:"}
                       </span>
                       <div className="font-semibold text-cyber-secondary">
                         {achievement.streak || achievement.machines}
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="flex items-center justify-between">
                     <Badge variant="secondary" className="bg-secondary/30">
@@ -183,10 +187,10 @@ const CybersecuritySection = () => {
                       <h4 className="font-semibold text-cyber-primary">{ctf.name}</h4>
                       <p className="text-sm text-muted-foreground">{ctf.category}</p>
                     </div>
-                    <div className="text-center">
+                    {/* <div className="text-center">
                       <div className="font-bold text-cyber-secondary">{ctf.position}</div>
                       <div className="text-xs text-muted-foreground">Position</div>
-                    </div>
+                    </div> */}
                     <div className="text-center">
                       <div className="font-bold">{ctf.team}</div>
                       <div className="text-xs text-muted-foreground">Team</div>

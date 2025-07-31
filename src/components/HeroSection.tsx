@@ -22,14 +22,14 @@ const HeroSection = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="fade-in-up">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 cyber-glow">
-            <span className="text-cyber-primary">Alex</span>{" "}
-            <span className="text-foreground">Chen</span>
+            <span className="text-cyber-primary">Fuad</span>{" "}
+            <span className="text-foreground">Mohammed</span>
           </h1>
           
           <div className="text-xl md:text-2xl text-muted-foreground mb-8 font-mono">
             <span className="text-cyber-secondary">&gt;</span> CS Graduate{" "}
             <span className="text-cyber-primary">|</span> Cybersecurity Enthusiast{" "}
-            <span className="text-cyber-primary">|</span> Junior Developer{" "}
+            <span className="text-cyber-primary">|</span> Software Developer{" "}
             <span className="text-cyber-secondary">&lt;</span>
           </div>
           

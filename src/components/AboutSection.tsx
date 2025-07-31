@@ -1,14 +1,14 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Code, Shield, Server, Database } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
+import profileImg from "@/assets/image.png";
 
 const AboutSection = () => {
   const skills = {
-    programming: ["Python", "Java", "JavaScript", "C++", "TypeScript", "Go"],
-    cybersecurity: ["Network Security", "Penetration Testing", "SIEM", "Incident Response", "Digital Forensics"],
-    tools: ["Docker", "Kubernetes", "AWS", "Linux", "Git", "Wireshark", "Metasploit"],
-    frameworks: ["React", "Node.js", "Express", "FastAPI", "Spring Boot"]
+    programming: ["Python","PHP" , "JavaScript", "C++", "TypeScript", ],
+    cybersecurity: ["Network Security","Web Hacking", "Penetration Testing"],
+    tools: ["Docker",  "Linux", "Git", "Wireshark", "Metasploit"],
+    frameworks: ["React", "Node.js", "Express", "FastAPI"], 
   };
 
   const SkillCard = ({ icon: Icon, title, skills }: { icon: any, title: string, skills: string[] }) => (
@@ -52,7 +52,7 @@ const AboutSection = () => {
               <div className="relative mb-6">
                 <img 
                   src={profileImg} 
-                  alt="Alex Chen" 
+                  alt="Fuad Mohammed" 
                   className="w-48 h-48 rounded-full object-cover border-4 border-cyber-primary/30 shadow-glow"
                 />
                 <div className="absolute inset-0 rounded-full bg-gradient-cyber opacity-20" />
@@ -62,14 +62,13 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold mb-4 text-cyber-secondary">Computer Science Graduate</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Recent Computer Science graduate with a passion for cybersecurity and software development. 
-                  Experienced in building secure applications, conducting vulnerability assessments, and 
+                  Experienced in building secure Web applications, conducting vulnerability assessments, and 
                   implementing defensive security measures. Always eager to learn new technologies and 
                   contribute to innovative projects that make the digital world safer.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   When I'm not coding or hunting for vulnerabilities, you'll find me participating in CTF 
-                  competitions, contributing to open-source projects, or exploring the latest developments 
-                  in AI and machine learning security.
+                  competitions, contributing to open-source projects, or exploring the latest developments .
                 </p>
               </div>
             </div>
@@ -85,13 +84,13 @@ const AboutSection = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-cyber-secondary">Bachelor of Science in Computer Science</h4>
-                    <p className="text-muted-foreground">University of Technology • 2024</p>
-                    <p className="text-sm text-muted-foreground mt-1">Concentration in Cybersecurity • GPA: 3.8/4.0</p>
+                    <p className="text-muted-foreground">University of Gondar • 2025</p>
+                    <p className="text-sm text-muted-foreground mt-1">Concentration in Cybersecurity  and Web App Development• GPA: 3.6/4.0</p>
                   </div>
                   <div className="border-t border-border pt-4">
                     <h4 className="font-semibold text-cyber-secondary mb-2">Relevant Coursework</h4>
                     <div className="flex flex-wrap gap-2">
-                      {["Network Security", "Cryptography", "Ethical Hacking", "Digital Forensics", "Software Engineering"].map(course => (
+                      {["Network Security", "Cryptography", "Ethical Hacking", "Software Engineering, Web Development"].map(course => (
                         <Badge key={course} variant="outline" className="text-xs">
                           {course}
                         </Badge>

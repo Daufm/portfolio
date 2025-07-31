@@ -2,17 +2,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink, Shield, Code, Database, Globe } from "lucide-react";
-
+import blog from "../assets/blog.png"
+import { title } from "process";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "SecureAuth Dashboard",
-      description: "A comprehensive authentication system with multi-factor authentication, role-based access control, and real-time security monitoring. Features include biometric authentication, session management, and detailed audit logs.",
-      icon: Shield,
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
-      tech: ["React", "Node.js", "PostgreSQL", "JWT", "Redis", "Docker"],
-      github: "https://github.com/alexchen/secureauth",
-      demo: "https://secureauth-demo.vercel.app",
+      title: "Blogging Platform",
+      description: "",
+      icon: Globe,
+      image: blog,
+      tech: ["React", "Node.js", "MongoDB", "JWT", "Express.js"],
+      github: "https://github.com/Daufm/Blogging-Platform",
+      demo: "https://blogging-platform-aicbguo4r-fuad-mohammeds-projects-76cf441a.vercel.app",
       featured: true
     },
     {
@@ -21,18 +22,18 @@ const ProjectsSection = () => {
       icon: Globe,
       image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
       tech: ["Python", "Nmap", "Scapy", "SQLite", "Pandas", "Matplotlib"],
-      github: "https://github.com/alexchen/vuln-scanner",
+      github: "https://github.com/Daufm/vuln-scanner",
       demo: null,
       featured: true
     },
     {
-      title: "Crypto Portfolio Tracker",
-      description: "Real-time cryptocurrency portfolio management application with security-focused API integrations, encrypted data storage, and comprehensive market analysis tools.",
+      title: "File Organizer CLI",
+      description: "oraganiz file in Folder by There extensions",
       icon: Database,
-      image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=800&q=80",
-      tech: ["TypeScript", "React", "Express", "MongoDB", "WebSockets", "Chart.js"],
-      github: "https://github.com/alexchen/crypto-tracker",
-      demo: "https://crypto-tracker-demo.netlify.app",
+      image: "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/c84efc4681492a34549b3301a38c26bd.jpg?product-images=xs",
+      tech: ["Python","CLI"],
+      github: "https://github.com/Daufm/file_organizer_cli",
+      demo: null,
       featured: false
     },
     {
@@ -41,18 +42,28 @@ const ProjectsSection = () => {
       icon: Code,
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
       tech: ["Go", "React", "PostgreSQL", "AES-256", "AWS S3", "Docker"],
-      github: "https://github.com/alexchen/secure-transfer",
+      github: "https://github.com/Daufm/Secure-File-Transfer_protocol",
       demo: null,
       featured: true
     },
     {
-      title: "IoT Security Monitor",
-      description: "Monitoring system for IoT devices that detects anomalous behavior, tracks device health, and provides security recommendations. Built for smart home environments.",
+     title: "Chat App",
+      description: "A real-time chat application with user authentication, group chats, and emoji support. Built for seamless and secure communication.",
       icon: Shield,
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=800&q=80",
-      tech: ["Python", "Flask", "InfluxDB", "Grafana", "MQTT", "Docker"],
-      github: "https://github.com/alexchen/iot-monitor",
-      demo: "https://iot-monitor-demo.herokuapp.com",
+      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
+      tech: ["React", "Node.js", "Socket.io", "JWT", "MongoDB"],
+      github: "https://github.com/Daufm/chat-app",
+      demo: "https://github.com/Daufm/chat-app",
+      featured: false
+    },
+    {
+      title: "Portfolio",
+      description: "A personal portfolio website showcasing my projects, skills, and experiences. Built for showcasing my work and attracting potential employers.",
+      icon: Globe,
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
+      tech: ["React", "TypeScript","Node.js", "Socket.io", "JWT", "MongoDB"],
+      github: "https://github.com/Daufm/portfolio",
+      demo: "https://daufm.github.io/portfolio/",
       featured: false
     }
   ];
@@ -155,7 +166,7 @@ const ProjectsSection = () => {
             className="border-cyber-primary text-cyber-primary hover:bg-cyber-primary/10"
             asChild
           >
-            <a href="https://github.com/alexchen" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Daufm" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-5 w-5" />
               View All Projects on GitHub
             </a>

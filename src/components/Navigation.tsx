@@ -45,8 +45,8 @@ const Navigation = () => {
           {/* Logo */}
           <div className="font-bold text-xl">
             <span className="text-cyber-primary font-mono">&lt;</span>
-            <span className="text-foreground">Alex</span>
-            <span className="text-cyber-secondary">Chen</span>
+            <span className="text-foreground">Fuad</span>
+            <span className="text-cyber-secondary">Moha</span>
             <span className="text-cyber-primary font-mono">/&gt;</span>
           </div>
 

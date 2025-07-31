@@ -6,17 +6,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/alexchen",
+      href: "https://github.com/Daufm",
       label: "GitHub"
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/alexchen",
+      href: "https://linkedin.com/in/fuad-mohammed",
       label: "LinkedIn"
     },
     {
       icon: Mail,
-      href: "mailto:alex.chen@email.com",
+      href: "mailto:fuadmohammed368@gmail.com",
       label: "Email"
     }
   ];
@@ -96,7 +96,7 @@ const Footer = () => {
         <div className="border-t border-cyber-primary/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Alex Chen. All rights reserved.
+              © {currentYear} Fuad Mohammed. All rights reserved.
             </p>
             
             <div className="flex items-center gap-2 text-muted-foreground text-sm">

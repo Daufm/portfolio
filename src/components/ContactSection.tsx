@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Github, Linkedin, MapPin, Phone, Send } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, Phone, Send, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -31,25 +31,27 @@ const ContactSection = () => {
       description: "Thank you for reaching out. I'll get back to you soon!",
     });
     setFormData({ name: "", email: "", subject: "", message: "" });
+
+    
   };
 
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "alex.chen@email.com",
-      link: "mailto:alex.chen@email.com"
+      value: "fuad.mohammed368@gmail.com",
+      link: "mailto:fuad.mohammed368@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+251 9 75986813",
+      link: "tel:+251975986813"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Addis Ababa, Ethiopia",
       link: null
     }
   ];
@@ -58,20 +60,32 @@ const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      url: "https://github.com/alexchen",
-      username: "@alexchen"
+      url: "https://github.com/Daufm",
+      username: "@Daufm"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/alexchen",
-      username: "Alex Chen"
+      url: "https://linkedin.com/in/fuad-mohammed",
+      username: "Fuad Mohammed"
+    },
+    {
+      icon: MessageCircle,
+      label: "Telegram account",
+      url: "https://t.me/mood_rush",
+      username: "@mood_rush"
+    },
+    {
+      icon: MessageCircle,
+      label: "Telegram Channel",
+      url: "https://t.me/devTalkStaff",
+      username: "@devTalkStaff"
     },
     {
       icon: Mail,
       label: "Email",
-      url: "mailto:alex.chen@email.com",
-      username: "alex.chen@email.com"
+      url: "mailto:fuad.mohammed368@gmail.com",
+      username: "fuad.mohammed368@gmail.com"
     }
   ];
 
