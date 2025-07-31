@@ -63,7 +63,7 @@ const ProjectsSection = () => {
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
       tech: ["React", "TypeScript","Node.js", "Socket.io", "JWT", "MongoDB"],
       github: "https://github.com/Daufm/portfolio",
-      demo: "https://daufm.github.io/portfolio/",
+      demo: "https://portfolio-opal-six-xgx6dr5as5.vercel.app/",
       featured: false
     }
   ];
