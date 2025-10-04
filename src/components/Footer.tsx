@@ -29,8 +29,8 @@ const Footer = () => {
           <div>
             <div className="font-bold text-xl mb-4">
               <span className="text-cyber-primary font-mono">&lt;</span>
-              <span className="text-foreground">Alex</span>
-              <span className="text-cyber-secondary">Chen</span>
+              <span className="text-foreground">Fuad</span>
+              <span className="text-cyber-secondary">Mohammed</span>
               <span className="text-cyber-primary font-mono">/&gt;</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
